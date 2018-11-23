@@ -6,7 +6,7 @@ using Api.Common.Repository;
 
 namespace Api.Common
 {
-    public static class PositionAdjustor
+    public static class PositionAdjuster
     {
         public static void AdjustForCreate(
             ISortable entity, IList<ISortable> entityPeers, params IList<ISortable>[] entityChildren)
