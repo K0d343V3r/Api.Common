@@ -34,6 +34,12 @@ namespace Api.Common
                 entity.Position = count;
             }
 
+            // adjust entity children
+            AdjustChildren(entityChildren);
+        }
+
+        public static void AdjustChildren(params IList<ISortable>[] entityChildren)
+        {
             // adjust child positions to match collection position
             foreach (var child in entityChildren)
             {
